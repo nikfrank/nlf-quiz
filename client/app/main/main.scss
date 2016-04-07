@@ -25,3 +25,34 @@
 .navbar-text {
   margin-left: 15px;
 }
+
+.question {
+	height:100px;
+	width:100%;
+	background-color: blue;
+	color : orange;
+	font-size: 30px;
+	margin : 6px;
+	overflow: hidden;
+	
+	span {
+		display:block;
+	}
+	
+	span.value {
+		width:70px;
+		height:30px;
+		margin:0 auto;
+		padding-top:25px;
+		
+	}
+	span.text {
+		width:70%;
+		margin:0 auto;
+		
+	}
+	span.answer {
+		width:70%;
+		margin:0 auto;
+	}
+}
