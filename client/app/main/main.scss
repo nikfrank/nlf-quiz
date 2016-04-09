@@ -27,32 +27,50 @@
 }
 
 .question {
-	height:100px;
-	width:100%;
-	background-color: blue;
-	color : orange;
-	font-size: 30px;
-	margin : 6px;
-	overflow: hidden;
-	
-	span {
-		display:block;
-	}
-	
-	span.value {
-		width:70px;
-		height:30px;
-		margin:0 auto;
-		padding-top:25px;
-		
-	}
-	span.text {
-		width:70%;
-		margin:0 auto;
-		
-	}
-	span.answer {
-		width:70%;
-		margin:0 auto;
-	}
+  height:100px;
+  width:100%;
+  background-color: blue;
+  color : orange;
+  font-size: 30px;
+  margin : 6px;
+  overflow: hidden;
+  
+  span {
+    display:block;
+  }
+  
+  span.value {
+    width:70px;
+    height:30px;
+    margin:0 auto;
+    padding-top:25px;
+    
+  }
+  span.text {
+    width:90%;
+    font-size:22px;
+    margin:0 auto;
+    
+  }
+  span.answer {
+    width:90%;
+    font-size:22px;
+    margin:0 auto;
+  }
+}
+
+.gameboard {
+  margin:0;
+  width:100%;
+
+  h3 {
+    height:100px;
+    margin:0;
+  }
+}
+
+.scoreboard {
+  height:50px;
+  width:100%;
+  margin:0;
 }

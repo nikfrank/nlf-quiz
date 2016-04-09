@@ -1,27 +1,39 @@
-<div class="container">
+<div class="container scoreboard">
   <div class="row">
-	<div class="col-xs-4" ng-repeat="cat in vm.categories">
-		<img src="assets/images/yeoman.png">
-		<h3>{{cat.name}}</h3>
-		<div class="question" ng-repeat="question in cat.questions">
-			<span
-				class="value"
-				ng-click="vm.goTo(question, 'text')"
-				ng-show="question.show =='value'">
-				₪{{question.value}}
-			</span>
-			<span
-				class="text"
-				ng-show="question.show == 'text'"
-				ng-click="vm.goTo(question,'answer')">
-				{{question.text}}
-			</span>
-			<span
-				class="answer"
-				ng-show="question.show == 'answer'">
-				{{question.answer}}
-			</span>
-		</div>
-	</div>
+    <div class="col-xs-4">
+      team 1
+    </div>
+    <div class="col-xs-4">
+      team 2
+    </div>
+    <div class="col-xs-4">
+      team 3
+    </div>
+  </div>
+</div>
+<div class="container gameboard">
+  <div class="row">
+    <div class="col-xs-2" ng-repeat="cat in vm.categories">
+      <h3>{{cat.name}}</h3>
+      <div class="question" ng-repeat="question in cat.questions">
+	<span
+	   class="value"
+	   ng-click="vm.goTo(question, 'text')"
+	   ng-show="question.show =='value'">
+	  ₪{{question.value}}
+	</span>
+	<span
+	   class="text"
+	   ng-show="question.show == 'text'"
+	   ng-click="vm.goTo(question,'answer')">
+	  {{question.text}}
+	</span>
+	<span
+	   class="answer"
+	   ng-show="question.show == 'answer'">
+	  {{question.answer}}
+	</span>
+      </div>
+    </div>
   </div>
 </div>
