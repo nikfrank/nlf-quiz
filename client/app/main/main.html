@@ -1,31 +1,34 @@
 <div class="container scoreboard">
   <div class="row">
     <div class="col-xs-4">
-      team 1
+      <span>Team 1</span>
+      <input placeholder="score...">
     </div>
     <div class="col-xs-4">
-      team 2
+      <span>Team 2</span>
+      <input placeholder="score...">
     </div>
     <div class="col-xs-4">
-      team 3
+      <span>Team 3</span>
+      <input placeholder="score...">
     </div>
   </div>
 </div>
 <div class="container gameboard">
   <div class="row">
-    <div class="col-xs-2" ng-repeat="cat in vm.categories">
+    <div class="col-xs-2" ng-repeat="cat in vm.games[vm.gameIndex].categories">
       <h3>{{cat.name}}</h3>
-      <div class="question" ng-repeat="question in cat.questions">
+      <div class="question"
+           ng-repeat="question in cat.questions"
+           ng-click="vm.advance(question)">
 	<span
 	   class="value"
-	   ng-click="vm.goTo(question, 'text')"
-	   ng-show="question.show =='value'">
+	   ng-show="question.show == 'value'">
 	  ₪{{question.value}}
 	</span>
 	<span
 	   class="text"
-	   ng-show="question.show == 'text'"
-	   ng-click="vm.goTo(question,'answer')">
+	   ng-show="question.show == 'text'">
 	  {{question.text}}
 	</span>
 	<span
@@ -36,4 +39,6 @@
       </div>
     </div>
   </div>
+  <button ng-click="vm.prev()">prev</button>
+  <button ng-click="vm.next()">next</button>
 </div>

@@ -1,29 +1,5 @@
-.thing-form {
-  margin: 20px 0;
-}
-
-#banner {
-  border-bottom: none;
-  margin-top: -20px;
-}
-
-#banner h1 {
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-.hero-unit {
-  position: relative;
-  padding: 30px 15px;
-  color: #F5F5F5;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background: #4393B9;
-}
-
-.navbar-text {
-  margin-left: 15px;
+body {
+  background-color:black;
 }
 
 .question {
@@ -64,6 +40,7 @@
   width:100%;
 
   h3 {
+    color:white;
     height:100px;
     margin:0;
   }
@@ -73,4 +50,18 @@
   height:50px;
   width:100%;
   margin:0;
+
+  font-size:30px;
+  color:orange;
+
+  input {
+    width:170px;
+    border:none;
+    padding-left:40px;
+    background-color:black;
+
+    &:focus {
+      background-color:navy;
+    }
+  }
 }
