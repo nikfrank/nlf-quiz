@@ -1,1 +1,1 @@
-web: http-server ./dist/client -p 80
+web: http-server ./dist/client -p $PORT
