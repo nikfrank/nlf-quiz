@@ -2,50 +2,6 @@ body {
   background-color:black;
 }
 
-.question {
-  height:100px;
-  width:100%;
-  background-color: blue;
-  color : orange;
-  font-size: 30px;
-  margin : 6px;
-  overflow: hidden;
-  
-  span {
-    display:block;
-  }
-  
-  span.value {
-    width:70px;
-    height:30px;
-    margin:0 auto;
-    padding-top:25px;
-    
-  }
-  span.text {
-    width:90%;
-    font-size:22px;
-    margin:0 auto;
-    
-  }
-  span.answer {
-    width:90%;
-    font-size:22px;
-    margin:0 auto;
-  }
-}
-
-.gameboard {
-  margin:0;
-  width:100%;
-
-  h3 {
-    color:white;
-    height:100px;
-    margin:0;
-  }
-}
-
 .scoreboard {
   height:50px;
   width:100%;
@@ -63,5 +19,79 @@ body {
     &:focus {
       background-color:navy;
     }
+  }
+}
+
+.gameboard {
+  margin:0;
+  width:100%;
+  position:relative;
+
+  h4 {
+    text-align:center;
+    color:#FFFF00;
+    height:100px;
+    font-size:22px;
+    padding:3px;
+    margin:0;
+  }
+
+  .fodal {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:100;
+    background-color:blue;
+    color:orange;
+    font-size:45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loadboard-fodal, .answer-fodal, .done-fodal {
+    display:none;
+  }
+}
+
+.category {
+  padding:0 3px;
+}
+
+.question {
+  height:90px;
+  width:100%;
+  background-color: blue;
+  color : orange;
+  font-size: 22px;
+  margin : 6px 6px 6px 0;
+  overflow: hidden;
+  
+  span {
+    display:block;
+  }
+  
+  span.value {
+    width:70px;
+    height:30px;
+    font-size:30px;
+    margin:0 auto;
+    padding-top:25px;
+  }
+  span.text {
+    width:90%;
+    font-size:22px;
+    margin:0 auto;
+    line-height:20px;
+    letter-spacing:-0.25px;
+  }
+  span.answer {
+    width:90%;
+    font-size:22px;
+    margin:0 auto;
+    line-height:20px;
+    letter-spacing:-0.25px;
   }
 }

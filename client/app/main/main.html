@@ -2,7 +2,8 @@
   <div class="row">
     <div class="col-xs-4">
       <span>Team 1</span>
-      <input placeholder="score...">
+      <input placeholder="score..." ng-model="t1s"
+             ng-style="{color:t1s[0]=='-'?'red':''}">
     </div>
     <div class="col-xs-4">
       <span>Team 2</span>
@@ -16,8 +17,8 @@
 </div>
 <div class="container gameboard">
   <div class="row">
-    <div class="col-xs-2" ng-repeat="cat in vm.games[vm.gameIndex].categories">
-      <h3>{{cat.name}}</h3>
+    <div class="category col-xs-2" ng-repeat="cat in vm.games[vm.gameIndex].categories">
+      <h4 class="question">{{cat.name}}</h4>
       <div class="question"
            ng-repeat="question in cat.questions"
            ng-click="vm.advance(question)">
@@ -41,4 +42,11 @@
   </div>
   <button ng-click="vm.prev()">prev</button>
   <button ng-click="vm.next()">next</button>
+
+  <div class="fodal" ng-class="vm.currentState + '-fodal'" ng-click="vm.modalClick()">
+    <div>
+      {{vm.modalText}}
+    </div>
+  </div>
 </div>
+
