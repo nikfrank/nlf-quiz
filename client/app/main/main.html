@@ -7,11 +7,13 @@
     </div>
     <div class="col-xs-4">
       <span>Team 2</span>
-      <input placeholder="score...">
+      <input placeholder="score..." ng-model="t2s"
+             ng-style="{color:t2s[0]=='-'?'red':''}">
     </div>
     <div class="col-xs-4">
       <span>Team 3</span>
-      <input placeholder="score...">
+      <input placeholder="score..." ng-model="t3s"
+             ng-style="{color:t3s[0]=='-'?'red':''}">
     </div>
   </div>
 </div>

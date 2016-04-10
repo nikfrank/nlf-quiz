@@ -6,7 +6,35 @@
 
     constructor($timeout) {
       this.advance = question=> {
+        if(this.currentState === 'fj-cat'){
+          this.currentState = 'fj-text';
+          this.modalText = this.games[this.gameIndex].finalJeopardy.text;
+          this.modalClick = ()=> this.advance();
+          return;
+        } else if(this.currentState === 'fj-text'){
+          this.currentState = 'fj-answer';
+          this.modalText = this.games[this.gameIndex].finalJeopardy.answer;
+          this.modalClick = ()=> this.advance();
+          return;
+        } else if(this.currentState === 'fj-answer'){
+          // this should display a winner?
+          this.currentState = '';
+          this.modalText = '';
+          this.modalClick = ()=> this.next();
+          return;
+        }
+
+        if(question.isDailyDouble && question.show === 'value'){
+          question.show = 'dd';
+          this.modalClick = ()=> this.advance(question);
+          this.modalText = 'כפול יומיומי';
+          this.currentState = question.show;
+          return;
+        }
+
 	question.show = (question.show === 'value')?
+          'text':
+          (question.show === 'dd')?
           'text':
           (question.show === 'text')?
           'answer':
@@ -16,11 +44,23 @@
         
         if(question.show === 'text'){
           this.modalText = question.text;
-          this.modalClick = ()=> {
-            this.advance(question);
-          };
+          this.modalClick = ()=> this.advance(question);
         } else {
           this.modalClick = ()=> 0;
+        }
+
+        if(!this.games[this.gameIndex].categories.reduce((gp, gc)=> (
+          gp + gc.questions.filter(q=>q.show!=='done').length), 0)){
+          console.log('final jeopardy?');
+          // if there's a final jeopardy question, show category
+          // then when it's clicked, show the clue
+          // then the answer?
+          let fj = this.games[this.gameIndex].finalJeopardy;
+          if(fj){
+            this.currentState = 'fj-cat';
+            this.modalText = fj.category;
+            this.modalClick = ()=> this.advance();
+          }
         }
       };
 
@@ -29,6 +69,7 @@
       this.gameIndex = -1;
       this.prev = ()=> (this.gameIndex = Math.max(0, this.gameIndex-1));
       this.next = ()=> {
+        this.modalClick = ()=>0;
         this.gameIndex = Math.min(this.games.length-1, this.gameIndex+1);
         this.currentState = 'category';
         
@@ -40,7 +81,7 @@
           this.currentState = 'loadboard';
           this.loadBoard();
 
-        }, delay*(this.games[this.gameIndex].categories.length+1.5));
+        }, delay*(this.games[this.gameIndex].categories.length));
       };
 
       this.loadBoard = ()=>{
@@ -155,6 +196,7 @@
                 {
                   value:400,
 	          show:'',
+                  isDailyDouble:true,
                   text:'contains chondrocytes',
                   answer:'what is cartilage'
                 },
@@ -276,6 +318,11 @@
         
         {
           name:'game 1 double',
+          finalJeopardy:{
+            category:'in your muscles',
+            text:'this acid is produced by hard exercise and oxygen debt, causing soreness',
+            answer:'what is lactic acid'
+          },
           categories:[
             {
               name:'sympathetic or parasympathetic',
@@ -394,6 +441,7 @@
                 {
                   value:400,
 	          show:'',
+                  isDailyDouble:true,
                   text:'ideal body-fat percentage range for women',
                   answer:'what is 18-24%'
                 },
@@ -441,6 +489,7 @@
                 {
                   value:800,
 	          show:'',
+                  isDailyDouble:true,
                   text:'elevation of top of foot with toes pointing up',
                   answer:'what is dorsiflexion'
                 },
@@ -517,6 +566,7 @@
                 {
                   value:400,
 	          show:'',
+                  isDailyDouble:true,
                   text:'made of osteons',
                   answer:'what is bone'
                 },
@@ -708,6 +758,11 @@
 
         {
           name:'game 2 double',
+          finalJeopardy:{
+            category:'the brain and spine',
+            text:'this fluid is normally yellowish and clear, some can be removed for analysis or to reduce pressure',
+            answer:'what is cerebrospinal fluid'
+          },
           categories:[
             {
               name:'sympathetic or parasympathetic',
@@ -789,6 +844,7 @@
                 },
                 {
                   value:800,
+                  isDailyDouble:true,
                   text:'digestive tract',
                   answer:'what is alimentary canal'
                 },
@@ -819,6 +875,7 @@
                 },
                 {
                   value:800,
+                  isDailyDouble:true,
                   text:'red, oxygen-storing pigment',
                   answer:'what is myoglobin'
                 },

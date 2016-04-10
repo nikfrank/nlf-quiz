@@ -23,6 +23,8 @@ body {
 }
 
 .gameboard {
+  user-select:none;
+  cursor:pointer;
   margin:0;
   width:100%;
   position:relative;
@@ -53,6 +55,12 @@ body {
   }
   .loadboard-fodal, .answer-fodal, .done-fodal {
     display:none;
+  }
+  .dd-fodal {
+    background-color:red;
+  }
+  .fj-cat-fodal {
+    background-color:red;
   }
 }
 
