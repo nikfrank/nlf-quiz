@@ -7,6 +7,7 @@
     constructor($timeout) {
       this.advance = question=> {
         if(this.currentState === 'fj-cat'){
+          document.getElementById('final-j-audio').play();
           this.currentState = 'fj-text';
           this.modalText = this.games[this.gameIndex].finalJeopardy.text;
           this.modalClick = ()=> this.advance();
@@ -19,12 +20,14 @@
         } else if(this.currentState === 'fj-answer'){
           // this should display a winner?
           this.currentState = '';
-          this.modalText = '';
+          this.modalText = 'FINAL SCORES: TEAM 1: '+$scope.t1s+
+            '  TEAM 2: '+$scope.t2s+'   TEAM 3: '+$scope.t3s;
           this.modalClick = ()=> this.next();
           return;
         }
 
         if(question.isDailyDouble && question.show === 'value'){
+          document.getElementById('dd-j-audio').play();
           question.show = 'dd';
           this.modalClick = ()=> this.advance(question);
           this.modalText = 'כפול יומיומי';
@@ -85,6 +88,7 @@
       };
 
       this.loadBoard = ()=>{
+        document.getElementById('start-j-audio').play();
         let i = 0;
         while(i<30){
           let c = Math.floor(Math.random()*6);
@@ -94,7 +98,7 @@
           this.games[this.gameIndex].categories[c].questions[q].show = 'scheduled';
 
           $timeout(()=> (this.games[this.gameIndex].categories[c].questions[q].show = 'value'),
-                 270*i);
+                 120*i);
         }
       };
       
