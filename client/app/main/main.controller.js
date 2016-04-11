@@ -204,7 +204,7 @@
                   value:500,
 	          show:'',
                   text:'blood-forming tissue',
-                  answer:'what is hematopiotic'
+                  answer:'what is hematopoitic'
                 }
               ]
             },
@@ -407,7 +407,7 @@
                   value:400,
 	          show:'',
                   text:'parathyroid',
-                  answer:'whats if neck'
+                  answer:'whats is neck'
                 },
                 {
                   value:600,
@@ -555,7 +555,7 @@
                   value: 200,
 	          show:'',
                   text:'contains triglycerides',
-                  answer:'question what is adipose'
+                  answer:'what is adipose'
                 },
                 {
                   value:300,
@@ -579,7 +579,7 @@
               ]
             },
             {
-              name:'types of muscle tissue (CHECK THIS TITLE)',
+              name:'types of muscle tissue',
               questions:[
                 {
                   value:100,
@@ -637,7 +637,7 @@
                 {
                   value:400,
 	          show:'',
-                  texzt:'gallbladder',
+                  text:'gallbladder',
                   answer:'what is digestive'
                 },
                 {
@@ -949,8 +949,6 @@
           ]
         }
       ];
-
-      this.next();      
     }
   }
   MainController.$inject = ['$timeout'];
