@@ -101,8 +101,459 @@
                  120*i);
         }
       };
-      
+
       this.games = [
+        {
+          name:'regular jeopardy',
+          categories:[
+
+            {
+              name: 'Controversy: Dihydropyridine or Non',
+              questions:[
+                {
+                  value:100,
+	          show:'',
+                  text:'amlodipine',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'diltiazem',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'nifedipine',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'felodipine',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'diltiazem',
+                  answer:'what is '
+                }
+              ]
+            },
+          
+            {
+              name: 'Problems with Angina',
+              questions:[
+                {
+                  value:100,
+	          show:'',
+                  text:'smoking',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'high salt diet',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'excessive alcohol intake',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'mild exercise',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'obesity',
+                  answer:'what is '
+                }
+              ]
+            },
+
+            {
+              name: 'No way to treat your angina',
+              questions:[
+                {
+                  value:100,
+	          show:'',
+                  text:'nitrates',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'beta-blockers',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'calcium channel blockers',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'phosphodiesterase inhibitors',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'diuretics',
+                  answer:'what is '
+                }
+              ]
+            },
+
+            {
+              name: 'that\'s not chill dude',
+              questions:[
+                {
+                  value:100,
+	          show:'',
+                  text:'cocaine',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'oral contraceptives',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'acetaminophen',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'prednisone',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'licorice root',
+                  answer:'what is '
+                }
+              ]
+            },
+            
+            {
+              name: 'selective beta blockers'
+              questions:[
+                {
+                  value:100,
+	          show:'',
+                  text:'acebutolol',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'pindolol',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'bisoprolol',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'metoprolol',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'propranolol',
+                  answer:'what is '
+                }
+              ]
+            },
+
+            {
+              name:'ACE inhibitor or ARB',
+              questions:[
+                {
+                  value:100,
+	          show:'',
+                  text:'enalapril',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'ramipril',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'losartan',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'fosinopril',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'irbesartan',
+                  answer:'what is '
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          name:'DOUBLE jeopardy',
+          finalJeopardy:{
+            category:'HEART HEALTH',
+            text:'This commonly used household product contains potassium chloride.',
+            answer:''
+          },
+          categories:[
+
+            {
+              name: 'hyper or hypo kalemia',
+              questions:[
+                {
+                  value:100,
+	          show:'',
+                  text:'hydrochlorothiazide',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'triamterene',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'perindopril',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'indapamide',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'spironolactone',
+                  answer:'what is '
+                }
+              ]
+            },
+
+            {
+              name:'calcium channel or beta or alpha',
+              questions:[
+                {
+                  value:100,
+	          show:'',
+                  text:'verapamil',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'pindolol',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'doxazosin',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'amlodipine',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'acebutolol',
+                  answer:'what is '
+                }
+              ]
+            },
+
+            {
+              name:'site for blood pressure control or not',
+              questions:[
+                {
+                  value:100,
+	          show:'',
+                  text:'heart',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'pancreas',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'appendix',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'blood vessels',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'kidneys',
+                  answer:'what is '
+                }
+              ]
+            },
+
+            {
+              name:'safe in pregnancy or not',
+              questions: [
+                {
+                  value:100,
+	          show:'',
+                  text:'irbesartan',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'hydralazine',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'quinapril',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'aliskirin',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'candesartan',
+                  answer:'what is '
+                }
+              ]
+            },
+
+            {
+              name:'increase or decrease blood pressure',
+              questions: [
+                {
+                  value:100,
+	          show:'',
+                  text:'smoking',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'increased cardiac output',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'decreased peripheral resistance',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'decreased heart rate',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'increased stroke volume',
+                  answer:'what is '
+                }
+              ]
+            },
+            
+            {
+              name:'hypertension risk factor or not',
+              questions: [
+                {
+                  value:100,
+	          show:'',
+                  text:'obesity',
+                  answer:'what is '
+                },
+                {
+                  value:200,
+	          show:'',
+                  text:'physical activity',
+                  answer:'what is '
+                },
+                {
+                  value:300,
+	          show:'',
+                  text:'family history',
+                  answer:'what is '
+                },
+                {
+                  value:400,
+	          show:'',
+                  text:'young age',
+                  answer:'what is '
+                },
+                {
+                  value:500,
+	          show:'',
+                  text:'diabetes',
+                  answer:'what is '
+                }
+              ]
+            }
+          ]
+        }
+      ];
+      
+      this.oldGames = [
         {
           name:'game 1 single',
           categories:[
