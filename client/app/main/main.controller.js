@@ -6,6 +6,7 @@
 
     constructor($timeout) {
       this.advance = question=> {
+
         if(this.currentState === 'fj-cat'){
           document.getElementById('final-j-audio').play();
           this.currentState = 'fj-text';
@@ -39,7 +40,7 @@
           'text':
           (question.show === 'dd')?
           'text':
-          (question.show === 'text')?
+          ((question.show === 'text') && (question.answer))?
           'answer':
           'done';
 
@@ -339,31 +340,31 @@
               name: 'hyper or hypo kalemia',
               questions:[
                 {
-                  value:100,
+                  value:200,
 	          show:'',
                   text:'hydrochlorothiazide',
                   answer:''
                 },
                 {
-                  value:200,
+                  value:400,
 	          show:'',
                   text:'triamterene',
                   answer:''
                 },
                 {
-                  value:300,
+                  value:600,
 	          show:'',
                   text:'perindopril',
                   answer:''
                 },
                 {
-                  value:400,
+                  value:800,
 	          show:'',
                   text:'indapamide',
                   answer:''
                 },
                 {
-                  value:500,
+                  value:1000,
 	          show:'',
                   text:'spironolactone',
                   answer:''
@@ -375,31 +376,31 @@
               name:'calcium channel or beta or alpha',
               questions:[
                 {
-                  value:100,
+                  value:200,
 	          show:'',
                   text:'verapamil',
                   answer:''
                 },
                 {
-                  value:200,
+                  value:400,
 	          show:'',
                   text:'pindolol',
                   answer:''
                 },
                 {
-                  value:300,
+                  value:600,
 	          show:'',
                   text:'doxazosin',
                   answer:''
                 },
                 {
-                  value:400,
+                  value:800,
 	          show:'',
                   text:'amlodipine',
                   answer:''
                 },
                 {
-                  value:500,
+                  value:1000,
 	          show:'',
                   text:'acebutolol',
                   answer:''
@@ -411,31 +412,31 @@
               name:'site for blood pressure control or not',
               questions:[
                 {
-                  value:100,
+                  value:200,
 	          show:'',
                   text:'heart',
                   answer:''
                 },
                 {
-                  value:200,
+                  value:400,
 	          show:'',
                   text:'pancreas',
                   answer:''
                 },
                 {
-                  value:300,
+                  value:600,
 	          show:'',
                   text:'appendix',
                   answer:''
                 },
                 {
-                  value:400,
+                  value:800,
 	          show:'',
                   text:'blood vessels',
                   answer:''
                 },
                 {
-                  value:500,
+                  value:1000,
 	          show:'',
                   text:'kidneys',
                   answer:''
@@ -447,32 +448,32 @@
               name:'safe in pregnancy or not',
               questions: [
                 {
-                  value:100,
+                  value:200,
 	          show:'',
                   text:'irbesartan',
                   answer:''
                 },
                 {
-                  value:200,
+                  value:400,
 	          show:'',
                   text:'hydralazine',
                   answer:''
                 },
                 {
-                  value:300,
+                  value:600,
 	          show:'',
                   isDailyDouble:true,
                   text:'quinapril',
                   answer:''
                 },
                 {
-                  value:400,
+                  value:800,
 	          show:'',
                   text:'aliskirin',
                   answer:''
                 },
                 {
-                  value:500,
+                  value:1000,
 	          show:'',
                   text:'candesartan',
                   answer:''
@@ -484,32 +485,32 @@
               name:'increase or decrease blood pressure',
               questions: [
                 {
-                  value:100,
+                  value:200,
 	          show:'',
                   text:'smoking',
                   answer:''
                 },
                 {
-                  value:200,
+                  value:400,
 	          show:'',
                   text:'increased cardiac output',
                   answer:''
                 },
                 {
-                  value:300,
+                  value:600,
 	          show:'',
                   text:'decreased peripheral resistance',
                   answer:''
                 },
                 {
-                  value:400,
+                  value:800,
 	          show:'',
                   isDailyDouble:true,
                   text:'decreased heart rate',
                   answer:''
                 },
                 {
-                  value:500,
+                  value:1000,
 	          show:'',
                   text:'increased stroke volume',
                   answer:''
@@ -521,31 +522,31 @@
               name:'hypertension risk factor or not',
               questions: [
                 {
-                  value:100,
+                  value:200,
 	          show:'',
                   text:'obesity',
                   answer:''
                 },
                 {
-                  value:200,
+                  value:400,
 	          show:'',
                   text:'physical activity',
                   answer:''
                 },
                 {
-                  value:300,
+                  value:600,
 	          show:'',
                   text:'family history',
                   answer:''
                 },
                 {
-                  value:400,
+                  value:800,
 	          show:'',
                   text:'young age',
                   answer:''
                 },
                 {
-                  value:500,
+                  value:1000,
 	          show:'',
                   text:'diabetes',
                   answer:''
