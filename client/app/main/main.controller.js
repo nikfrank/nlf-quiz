@@ -203,6 +203,7 @@
                 {
                   value:400,
 	          show:'',
+                  isDailyDouble:true,
                   text:'phosphodiesterase inhibitors',
                   answer:''
                 },
@@ -460,6 +461,7 @@
                 {
                   value:300,
 	          show:'',
+                  isDailyDouble:true,
                   text:'quinapril',
                   answer:''
                 },
@@ -502,6 +504,7 @@
                 {
                   value:400,
 	          show:'',
+                  isDailyDouble:true,
                   text:'decreased heart rate',
                   answer:''
                 },
