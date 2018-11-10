@@ -97,8 +97,8 @@
     "supertest": "^1.1.0"
   },
   "engines": {
-    "node": "^4.4.0",
-    "npm": "^2.14.20"
+    "node": ">4.4.0",
+    "npm": ">2.14.20"
   },
   "scripts": {
     "start": "node server",
