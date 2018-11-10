@@ -101,7 +101,19 @@ body {
     margin:0 auto;
     line-height:20px;
     letter-spacing:-0.25px;
+
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    animation: fade-out 5s forwards;
   }
+}
+
+@keyframes fade-out {
+  from { opacity: 1 }
+  to { opacity: 0 }
 }
 
 .audio-row {

@@ -2,18 +2,18 @@
   <div class="row">
     <div class="col-xs-4">
       <span>Team 1</span>
-      <input placeholder="score..." ng-model="t1s"
-             ng-style="{color:t1s[0]=='-'?'red':''}">
+      <input placeholder="score..." ng-model="vm.t1s"
+             ng-style="{color:vm.t1s[0]=='-'?'red':''}">
     </div>
     <div class="col-xs-4">
       <span>Team 2</span>
       <input placeholder="score..." ng-model="t2s"
-             ng-style="{color:t2s[0]=='-'?'red':''}">
+             ng-style="{color:vm.t2s[0]=='-'?'red':''}">
     </div>
     <div class="col-xs-4">
       <span>Team 3</span>
       <input placeholder="score..." ng-model="t3s"
-             ng-style="{color:t3s[0]=='-'?'red':''}">
+             ng-style="{color:vm.t3s[0]=='-'?'red':''}">
     </div>
   </div>
 </div>
