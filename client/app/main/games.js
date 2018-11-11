@@ -100,6 +100,7 @@
                   value: 300,
 	          show:'',
                   text:'B1',
+                  isDailyDouble:true,
                   answer:'thiamine'
                 },
                 {
@@ -243,6 +244,7 @@
                 {
                   value: 400,
 	          show:'',
+                  isDailyDouble:true,
                   text:'ovulation',
                   answer:'LH'
                 },
@@ -327,6 +329,7 @@
                 {
                   value: 800,
                   show:'',
+                  isDailyDouble:true,
                   text:'premature infant or term infant',
                   answer:'premature'
                 },
@@ -588,6 +591,7 @@
                   value: 300,
                   show:'',
                   text:'left ventricle',
+                  isDailyDouble:true,
                   answer:'aortic SL valve'
                 },
                 {
@@ -696,6 +700,7 @@
                 {
                   value: 400,
                   show:'',
+                  isDailyDouble:true,
                   text:'calcitonin',
                   answer:'thyroid'
                 },
@@ -878,6 +883,7 @@
                 {
                   value: 400,
                   show:'',
+                  isDailyDouble:true,
                   text:'inferior mesenteric',
                   answer:'abdomen'
                 },
