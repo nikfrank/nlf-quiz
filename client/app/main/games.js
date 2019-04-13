@@ -229,7 +229,6 @@
             },
           ]
         },
-        //... what
         
         {
           name:'game 1 single',
