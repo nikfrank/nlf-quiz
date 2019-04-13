@@ -5,8 +5,481 @@
   class makeGames {
     
     constructor() {
+      
       this.games = [
         {
+          name:'game 1 single',
+          categories:[
+            {
+              name: 'Sulfonylurea, DPP-4 inhibitor, or SGLT-2 inhhibitor',
+              questions: [
+                {
+                  value: 100,
+	          show:'',
+                  text:'dapagliflozin',
+                  answer:'SGLT-2 inhibitor'
+                },
+                {
+                  value: 200,
+	          show:'',
+                  text:'sitagliptin',
+                  answer:'DPP-4 inhibitor'
+                },
+                {
+                  value: 300,
+	          show:'',
+                  text:'gliclazide',
+                  isDailyDouble:true,
+                  answer:'Sulfonylurea'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'glyburide',
+                  answer:'Sulfonylurea'
+                },
+                {
+                  value: 500,
+	          show:'',
+                  text:'linagliptin',
+                  answer:'DPP-4 inhibitor'
+                },
+              ]
+            },
+            
+            {
+              name: 'can it cause weight gain',
+              questions: [
+                {
+                  value: 100,
+	          show:'',
+                  text:'metformin',
+                  answer:'no'
+                },
+                {
+                  value: 200,
+	          show:'',
+                  text:'glyburide',
+                  answer:'yes'
+                },
+                {
+                  value: 300,
+	          show:'',
+                  text:'pioglitazone',
+                  answer:'yes'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'liraglutide',
+                  answer:'no'
+                },
+                {
+                  value: 500,
+	          show:'',
+                  text:'canagliflozin',
+                  answer:'no'
+                },
+              ]
+            },
+
+            {
+              name: 'can it cause hypoglycemia',
+              questions: [
+                {
+                  value: 100,
+	          show:'',
+                  text:'repaglinide',
+                  answer:'yes'
+                },
+                {
+                  value: 200,
+	          show:'',
+                  text:'metformin',
+                  answer:'no'
+                },
+                {
+                  value: 300,
+	          show:'',
+                  text:'saxagliptin',
+                  answer:'no'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'empagliflozin',
+                  answer:'no'
+                },
+                {
+                  value: 500,
+	          show:'',
+                  text:'exenatide',
+                  answer:'no'
+                },
+              ]
+            },
+
+            {
+              name: 'rapid or long-acting insulin',
+              questions: [
+                {
+                  value: 100,
+	          show:'',
+                  text:'detemir',
+                  answer:'long'
+                },
+                {
+                  value: 200,
+	          show:'',
+                  text:'glulisine',
+                  answer:'rapid'
+                },
+                {
+                  value: 300,
+	          show:'',
+                  text:'glargine',
+                  answer:'long'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'aspart',
+                  answer:'rapid'
+                },
+                {
+                  value: 500,
+	          show:'',
+                  text:'degludec',
+                  answer:'long'
+                },
+              ]
+            },
+
+            
+            {
+              name: 'signs of hypoglycemia or hyperglycemia',
+              questions: [
+                {
+                  value: 100,
+	          show:'',
+                  text:'dry mouth',
+                  answer:'hyper'
+                },
+                {
+                  value: 200,
+	          show:'',
+                  text:'palpitations',
+                  answer:'hypo'
+                },
+                {
+                  value: 300,
+	          show:'',
+                  text:'frequent urination',
+                  answer:'hyper'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'loss of consciousness',
+                  answer:'hypo'
+                },
+                {
+                  value: 500,
+	          show:'',
+                  text:'fruity smelling breath',
+                  answer:'hyper'
+                },
+              ]
+            },
+
+            {
+              name: 'type I or type II diabetes',
+              questions: [
+                {
+                  value: 100,
+	          show:'',
+                  text:'autoimmune disease',
+                  answer:'I'
+                },
+                {
+                  value: 200,
+	          show:'',
+                  text:'usually overweight',
+                  answer:'II'
+                },
+                {
+                  value: 300,
+	          show:'',
+                  text:'requires insulin',
+                  answer:'I'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'most common type',
+                  answer:'II'
+                },
+                {
+                  value: 500,
+	          show:'',
+                  text:'risk increases with age',
+                  answer:'II'
+                },
+              ]
+            },
+          ]
+        },
+        //...
+        
+        {
+          name:'game 1 single',
+          categories:[
+            {
+              name: 'insulin or GLP-1 agonist',
+              questions: [
+                {
+                  value: 200,
+	          show:'',
+                  text:'lispro',
+                  answer:'insulin'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'semaglutide',
+                  answer:'GLP-1 agonist'
+                },
+                {
+                  value: 600,
+	          show:'',
+                  text:'liraglutide',
+                  answer:'GLP-1 agonist'
+                },
+                {
+                  value: 800,
+	          show:'',
+                  text:'NPH',
+                  answer:'insulin'
+                },
+                {
+                  value: 1000,
+	          show:'',
+                  text:'lixisenatide',
+                  answer:'GLP-1 agonist'
+                },
+              ]
+            },
+
+            
+            {
+              name: 'risk factor for type II diabetes or not',
+              questions: [
+                {
+                  value: 200,
+	          show:'',
+                  text:'woman age 35',
+                  answer:'no'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'man with high blood pressure',
+                  answer:'yes'
+                },
+                {
+                  value: 600,
+	          show:'',
+                  text:'having given birth to a 4 kg baby',
+                  answer:'yes'
+                },
+                {
+                  value: 800,
+	          show:'',
+                  text:'woman with high cholesterol',
+                  answer:'yes'
+                },
+                {
+                  value: 1000,
+	          show:'',
+                  text:'member of First Nations',
+                  answer:'yes'
+                },
+              ]
+            },
+
+            
+            {
+              name: 'myth or truth',
+              questions: [
+                {
+                  value: 200,
+	          show:'',
+                  text:'people with diabetes can\'t eat sugar',
+                  answer:'myth'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'diabetes is contagious',
+                  answer:'myth'
+                },
+                {
+                  value: 600,
+	          show:'',
+                  text:'diabetes is leading cause of blindness',
+                  answer:'truth'
+                },
+                {
+                  value: 800,
+	          show:'',
+                  text:'cardiovascular disease is strongly linked to diabetes',
+                  answer:'truth'
+                },
+                {
+                  value: 1000,
+	          show:'',
+                  text:'diabetes is a chronic disease',
+                  answer:'truth'
+                },
+              ]
+            },
+
+            {
+              name: 'numbers',
+              questions: [
+                {
+                  value: 200,
+	          show:'',
+                  text:'year insulin was discovered',
+                  isDailyDouble:true,
+                  answer:'1921'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'desired A1c for most adults with diabetes',
+                  answer:'7.0%'
+                },
+                {
+                  value: 600,
+	          show:'',
+                  text:'desired blood pressure for most adults with diabetes',
+                  answer:'<130/80mm Hg'
+                },
+                {
+                  value: 800,
+	          show:'',
+                  text:'desired LDL for most adults with diabetes',
+                  answer:'<2.0mmol/L'
+                },
+                {
+                  value: 1000,
+	          show:'',
+                  text:'age to start testing for diabetes if you have no risk factors',
+                  answer:'40'
+                },
+              ]
+            },
+
+            
+            {
+              name: 'which medication causes this side effect',
+              questions: [
+                {
+                  value: 200,
+	          show:'',
+                  text:'metallic taste',
+                  answer:'metformin'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'congestive heart failure, fractures',
+                  answer:'rosiglitazone'
+                },
+                {
+                  value: 600,
+	          show:'',
+                  text:'gas',
+                  answer:'acarbose'
+                },
+                {
+                  value: 800,
+	          show:'',
+                  text:'yeast infection',
+                  answer:'canagliflozin, dapagliflozin, empgliflozin'
+                },
+                {
+                  value: 1000,
+	          show:'',
+                  text:'risk of renal failure if taken during IV contrast dye test',
+                  answer:'metformin'
+                },
+              ]
+            },
+
+            
+            {
+              name: 'define the term',
+              questions: [
+                {
+                  value: 200,
+	          show:'',
+                  text:'polyuria',
+                  answer:'excessive amount of urine'
+                },
+                {
+                  value: 400,
+	          show:'',
+                  text:'polydipsia',
+                  answer:'increased thirst'
+                },
+                {
+                  value: 600,
+	          show:'',
+                  text:'polyphagia',
+                  answer:'increased appetite'
+                },
+                {
+                  value: 800,
+	          show:'',
+                  text:'glucosuria',
+                  isDailyDouble:true,
+                  answer:'glucose in urine'
+                },
+                {
+                  value: 1000,
+	          show:'',
+                  text:'A1c',
+                  answer:'average blood sugar over past three months'
+                },
+              ]
+            },
+
+          ],
+        
+          finalJeopardy:{
+            category:'Animal Kingdom',
+            text:'This drug is a synthetic form of a substance found in the saliva of the Gila monster lizard',
+            answer:'exenatide'
+          }
+        }
+        //...
+
+      ];
+
+
+    }
+  }
+
+  angular.module('quizApp')
+         .service('games', makeGames);
+})(angular);
+
+
+/*
+this.games = [
+  {
           name:'game 1 single',
           categories:[
             {
@@ -915,15 +1388,8 @@
             answer: ''
           },
         }
-      ];      
-    }
-  }
-
-  angular.module('quizApp')
-         .service('games', makeGames);
-})(angular);
-
-
+      ];
+*/
 
 
 /*
@@ -2234,3 +2700,4 @@ this.oldGames = [
   }
 ];
 */
+
